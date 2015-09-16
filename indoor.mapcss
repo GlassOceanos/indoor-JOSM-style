@@ -1,0 +1,207 @@
+meta 
+{
+    title: "Indoor";
+    description: "visualize indor objects";
+    version: "0.1[[date]";
+    author: "Guillermo Amat";
+    /*link: "https://josm.openstreetmap.de/wiki/Styles/xxxxxxxx";*/
+}
+
+meta[lang=en]
+{
+    title: "Indoor";
+    description: "Indoor color representation";
+}
+
+
+
+/* basic geometry */
+canvas
+{
+    background-color: #606060;
+}
+
+
+/* Building */
+area[building]
+{
+	color: #ef7d10;
+	fill-opacity:1.0;
+	fill-color: #EFE8AF;
+	width: 4;
+	z-index:0;
+	prop_area_small_name : 1
+}
+
+/* room */
+way[buildingpart=room],way[indoor=room]
+{
+	color: #efe3d6;
+	fill-color: #fffbef;
+	fill-opacity:1.0;
+	width: 2;
+	z-index:2;
+	font-size: 12;
+	font-color: black;
+	prop_area_small_name : 1
+}
+
+/* Stairs and elevators */
+way[buildingpart:verticalpassage=elevator],way[indoor=elevator]
+{
+	color: #bbbbbb;
+	width: 2;
+	fill-color: #ffcc33;
+	fill-opacity:1;
+	z-index:3;
+}
+
+way[buildingpart:verticalpassage=stairs], way[stairs=yes]
+{
+	/*color: #bbbbbb;*/
+	fill-color: #fff394;
+	fill-opacity:1;
+	z-index:3;
+}
+
+/* Corridor */
+area[buildingpart=corridor], area[indoor=corridor]
+{
+	/*color: #bbbbbb;*/
+	fill-color: #fff9c5;
+	fill-opacity:1;
+	z-index:1;
+	/*width: 2;*/
+}
+
+/* indoor ways */
+way[highway=footway]
+{
+	color: #99c399;
+	fill-opacity:1.0;
+	width: 2;
+	z-index:3;
+	prop_area_small_name : 1
+}
+
+/* indoor ways */
+way[highway=footway][indoor=yes]
+{
+	color: #6bc38c;
+	fill-opacity:1.0;
+	width: 2;
+	z-index:3;
+	prop_area_small_name : 1
+}
+
+/* indoor ways */
+way[highway=elevator]
+{
+	color: #6bc38c;
+	dashes: 15,9;
+	dashes-background-color: #000000;
+	fill-opacity:1.0;
+	width: 2;
+	z-index:3;
+	prop_area_small_name : 1
+}
+
+/* indoor ways */
+way[highway=steps]
+{
+	color: #6bc38c;
+	dashes: 15,9;
+	dashes-background-color: #000000;
+	fill-opacity:1.0;
+	width: 2;
+	z-index:3;
+	prop_area_small_name : 1
+}
+
+/* Doors */
+node[door=yes]
+{
+	color: #bb0000;
+	fill-color: #bb0000;
+	width:15;
+	z-index:3;
+}
+
+/* Indoormarks */
+node[beacon:type=bluetooth]
+{
+	color: #bbff00;
+	fill-color: #bbff00;
+	width:15;
+	z-index:3;
+	icon-image:icons/beacon.png;
+	icon-width: 16;
+	icon-height: 16;
+}
+
+node[beacon:type=qr],node[beacon:type=QR]
+{
+	color: #bbff00;
+	fill-color: #bbff00;
+	width:15;
+	z-index:3;
+	icon-image:icons/qrcode.png;
+	icon-width: 16;
+	icon-height: 16;
+}
+
+node[beacon:type=nfc]
+{
+	color: #bbff00;
+	fill-color: #bbff00;
+	width:15;
+	z-index:3;
+	icon-image:icons/nfc.png;
+	icon-width: 16;
+	icon-height: 16;
+}
+
+node[emergency=fire_extinguisher]
+{
+	color: #bbff00;
+	fill-color: #bbff00;
+	width:15;
+	z-index:3;
+	icon-image:icons/fire_extinguisher.png;
+	icon-width: 16;
+	icon-height: 16;
+}
+
+node[emergency=fire_hose]
+{
+	color: #bbff00;
+	fill-color: #bbff00;
+	width:15;
+	z-index:3;
+	icon-image:icons/fire_hose.png;
+	icon-width: 16;
+	icon-height: 16;
+}
+
+node[emergency=fire_alarm]
+{
+	color: #bbff00;
+	fill-color: #bbff00;
+	width:15;
+	z-index:3;
+	icon-image:icons/fire_alarm.png;
+	icon-width: 16;
+	icon-height: 16;
+}
+
+node[emergency=assembly_point]
+{
+	color: #bbff00;
+	fill-color: #bbff00;
+	width:15;
+	z-index:3;
+	icon-image:icons/assembly_point.png;
+	icon-width: 16;
+	icon-height: 16;
+}
+
