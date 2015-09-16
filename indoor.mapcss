@@ -5,7 +5,7 @@ meta
     description: "This JOSM style displays useful information to help indoor map edition. It highlights rooms, corridors, stairs and elevators. In addition, some kind of nodes which are important inside a building will be represented also";
     version: "0.5";
     author: "Ubica2 Project Team";
-    link: "https://github.com/GlassOceanos/indoor-JOSM-style;"
+    link: "https://github.com/GlassOceanos/indoor-JOSM-style";
 }
 
 /* basic geometry */
