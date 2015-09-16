@@ -5,4 +5,4 @@ This JOSM style displays useful information to help indoor map edition. It highl
 - Objects related to emergency situations: fire extinguishers, assembly points...
 
 ## Install
-Download the mapcss file and the icons directory. Follow the instructions here http://josm.openstreetmap.de/wiki/Styles#Addingownstyles to add the style
+Download the zip and extract its content. Follow the instructions here http://josm.openstreetmap.de/wiki/Styles#Addingownstyles to add the style
