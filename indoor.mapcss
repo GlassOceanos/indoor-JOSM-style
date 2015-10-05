@@ -198,3 +198,24 @@ node[emergency=assembly_point]
 	icon-height: 16;
 }
 
+/* Missing level tag*/
+way[indoor][!level], node[indoor][!level]
+{
+	color: orange;
+	width: 4;
+	z-index: 3;
+	text: tr("LEVEL?");
+	text-color: black;
+	text-offset: 0;
+	text-halo-color: red;
+	text-halo-radius: 2;
+	dashes: 10,10;
+	dashes-background-color: yellow;
+}
+
+way[indoor][!level]:closed
+{
+	fill-color: yellow;
+	fill-opacity: 1.0;
+}
+
