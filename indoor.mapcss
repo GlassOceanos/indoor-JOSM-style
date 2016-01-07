@@ -11,7 +11,7 @@ meta
 /* basic geometry */
 canvas
 {
-    background-color: #606060;
+    fill-color: #606060;
 }
 
 
